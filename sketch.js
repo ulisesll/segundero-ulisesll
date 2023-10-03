@@ -24,11 +24,13 @@ function draw() {
   s = nf(second(),2)
   textAlign(CENTER,CENTER)
   textSize(32)
+  push()
   rot=s* (6 * grado)
   rotate(rot)
   circle(0,0,200)
   strokeWeight(2)
   line(0,0,0,-100)
+  pop()
   text(h+":"+m+":"+s,0,0)
   strokeWeight(1)
 
